@@ -1,0 +1,39 @@
+@media (max-width: 954px) {
+    .container {
+        max-width: 780px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column-reverse;
+        max-width: 350px;
+        height: 650px;
+    }
+
+    .container .informacoes {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .container picture::after {
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 1rem;
+    }
+
+    .container picture {
+        border-top-left-radius: 1rem;
+    }
+
+    .container picture img {
+        object-fit: cover;
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 0;
+    }
+
+    .container .informacoes-valores {
+        gap: 1.5rem;
+    }
+}

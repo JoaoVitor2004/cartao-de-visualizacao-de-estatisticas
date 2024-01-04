@@ -1,0 +1,80 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(1, 1, 26);
+    width: 100%;
+    height: 100vh;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(16, 16, 39);
+    max-width: 900px;
+    height: 350px;
+    border-radius: 1rem;
+}
+
+.container picture {
+    position: relative;
+}
+
+.container picture::after {
+    content: '';
+    background-color: rgba(255, 0, 255, 0.268);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.container picture img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    object-fit: cover;
+}
+
+.container .informacoes {
+    padding: 50px 60px;
+}
+
+.container .informacoes h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: rgb(195, 56, 195);
+}
+
+.container .informacoes p {
+    max-width: 350px;
+    line-height: 2.2rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.2rem;
+}
+
+.container .informacoes-valores {
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+}
+
+.container .informacoes-valores .valores h2 {
+    margin-bottom: .5rem;
+    color: rgb(195, 56, 195);
+}
